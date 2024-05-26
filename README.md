@@ -87,7 +87,9 @@ The selected location for this project is in the Baffin Bay, the stretch of sea 
 <!-- S2 -->
 # Sentinel-2 optical image classification
 Sentinel-2 provides an optical image of the location, composed of 110x110 km2 tiles (ortho-images in UTM/WGS84 projection). K-means classification is used to discriminate lead from sea ice, and below is the result.
-
+<a href="https://github.com/affan1317/GEOL0069-EOYA">
+   <img src="ice_all.png" alt="Logo" width="800" height="500">
+</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
