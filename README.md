@@ -81,12 +81,19 @@ The Sentinel-2 and Sentinel-3 data folders used in this project are obtained fro
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Where is this?
+# Where are we?
 The selected location for this project is in the Baffin Bay, the stretch of sea between Greenland and Canada. The sea is frozen a majority period of the year, but there is still movement in the sea ice, creating those leads. The images that we are looking into today is from the 4th of May 2024, which we can also tell by the folder names. It is useful to note that the sensing time of the Sentinel-2 and Sentinel-3 data are separated by a few hours.
+
+<a href="https://github.com/affan1317/GEOL0069-EOYA">
+   <img src="location.png" alt="Logo" width="800" height="500">
+</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- S2 -->
 # Sentinel-2 optical image classification
-Sentinel-2 provides an optical image of the location, composed of 110x110 km2 tiles (ortho-images in UTM/WGS84 projection). K-means classification is used to discriminate lead from sea ice, and below is the result.
+Sentinel-2 provides an optical image of the location, composed of 110x110 km2 tiles (ortho-images in UTM/WGS84 projection). K-means classification is used to discriminate lead from sea ice, and below is the result. The algorithm did a great job capturing the narrow leads running through the sea ice. An important thing to note here is that the condition for this area at this specific time is almost cloudless, thus the good result. Therefore, when this simple K-means classification is applied to cloudy image, the result might not be as good as the algorithm might group the white clouds together with the sea ice and not detect the leads underneath.
+
 <a href="https://github.com/affan1317/GEOL0069-EOYA">
    <img src="kmeans.png" alt="Logo" width="800" height="500">
 </a>
