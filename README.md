@@ -37,7 +37,7 @@
 
 <!-- INTRODUCTION -->
 # K-means Clustering
-K-means clustering is a type of unsupervised learning algorithm used for partitioning a dataset into a set of k groups (or clusters), where k represents the number of groups pre-specified by the analyst. It classifies the data points based on the similarity of the features of the data {cite}macqueen1967some. The basic idea is to define k centroids, one for each cluster, and then assign each data point to the nearest centroid, while keeping the centroids as small as possible.
+K-means clustering is a type of unsupervised learning algorithm used for partitioning a dataset into a set of k groups (or clusters), where k represents the number of groups pre-specified by the analyst. It classifies the data points based on the similarity of the features of the data [^1,^2]. The basic idea is to define k centroids, one for each cluster, and then assign each data point to the nearest centroid, while keeping the centroids as small as possible.
 
 ## Why K-means for Clustering?
 K-means clustering is particularly well-suited for applications where:
@@ -117,3 +117,7 @@ Project Link: [https://github.com/affan1317/GEOL0069-EOYA](https://github.com/af
 <!-- ACKNOWLEDGMENTS -->
 # Acknowledgments
 - This project is part of an assignment for module GEOL0069 taught in UCL Earth Sciences Department
+
+# References
+[^1]: MacQueen, J., 1967, June. Some methods for classification and analysis of multivariate observations. In Proceedings of the fifth Berkeley symposium on mathematical statistics and probability (Vol. 1, No. [^2]: Abiodun M. Ikotun, Absalom E. Ezugwu, Laith Abualigah, Belal Abuhaija, Jia Heming, 2023. K-means clustering algorithms: A comprehensive review, variants analysis, and advances in the era of big data, Information Sciences, Volume 622, Pages 178-210, ISSN 0020-0255, [https://doi.org/10.1016/j.ins.2022.11.139](https://www.sciencedirect.com/science/article/pii/S0020025522014633).
+
