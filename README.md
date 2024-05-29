@@ -8,7 +8,7 @@
     <img src="ice_all.png" alt="Logo" width="800" height="500">
   </a>
   
-  <h3 align="center">Sea-ice and lead unsupervised classification</h3>
+  <h3 align="center">GEOL0069 End-of-year Assignment: Sea-ice and lead unsupervised classification</h3>
 
   <p align="justify">
     This project focuses on unsupervised classification of sea ice and lead. K-means method of classification is applied to the high-resolution Sentinel-2 optical image and the collocated Sentinel-3 altimetry data and compare the results with the ground truth (classification by ESA).
