@@ -29,8 +29,8 @@
       </ul>
     </li>
     <li><a href="#where-are-we">Where are we?</a></li>
-    <li><a href="#sentinel-2-optical-image">Sentinel-2 Optical Image</a></li>
-    <li><a href="#sentinel-3-altimetry-data">Sentinel-3 Altimetry Data</a></li>
+    <li><a href="#sentinel-2-optical-image-classification">Sentinel-2 optical image classification</a></li>
+    <li><a href="#sentinel-3-altimetry-data-classification">Sentinel-3 altimetry data classification</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
     <li><a href="#references">References</a></li>
