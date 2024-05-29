@@ -45,7 +45,7 @@ K-means clustering is a type of unsupervised learning algorithm used for partiti
 <a href="https://github.com/affan1317/GEOL0069-EOYA">
    <img src="centroids.png" alt="Logo" width="800" height="500">
 </a>
-<h3 align="center">Figure 1: Illustration of how K-means classification works [^4]</h3>
+<h3 align="center">Figure 1: Illustration of how K-means classification works [^3]</h3>
 
 ## Why K-means for Clustering?
 K-means clustering is particularly well-suited for applications where:
@@ -59,7 +59,7 @@ K-means clustering is particularly well-suited for applications where:
 - Update Step: The centroids are recomputed as the center of all the data points assigned to the respective cluster.
 
 ## The Iterative Process of K-means
-The assignment and update steps are repeated iteratively until the centroids no longer move significantly, meaning the within-cluster variation is minimised. This iterative process ensures that the algorithm converges to a result, which might be a local optimum [^4].
+The assignment and update steps are repeated iteratively until the centroids no longer move significantly, meaning the within-cluster variation is minimised. This iterative process ensures that the algorithm converges to a result, which might be a local optimum [^3].
 
 ## Advantages of K-means
 - Efficiency: K-means is computationally efficient.
@@ -114,12 +114,12 @@ Sentinel-2 provides an optical image of the location, composed of 110x110 km2 ti
 
 <!-- S3 -->
 # Sentinel-3 altimetry data classification
-The shape of altimetry waveforms strongly depend on the surface characteristics. Major differences can be seen in terms of power magnitudes, number and shape of signal peaks [^3]. Leads produce narrow waves with very high power magnitude due to the calm and flat water. On the other hand, signal reflected from the ocean and sea ice are wider, noisier, and tend to have more peaks. This is because they are subjected to movement caused by waves and/or ice floes. The clear differences allow the classification of these surfaces using altimetry data.
+The shape of altimetry waveforms strongly depend on the surface characteristics. Major differences can be seen in terms of power magnitudes, number and shape of signal peaks [^4]. Leads produce narrow waves with very high power magnitude due to the calm and flat water. On the other hand, signal reflected from the ocean and sea ice are wider, noisier, and tend to have more peaks. This is because they are subjected to movement caused by waves and/or ice floes. The clear differences allow the classification of these surfaces using altimetry data.
 
 <a href="https://github.com/affan1317/GEOL0069-EOYA">
    <img src="altimetry.png" alt="Logo" width="800" height="500">
 </a>
-<h3 align="center">Figure 4: Waveform examples for Envisat (top row) and SARAL (bottom row) for three different surface scatterers: Ocean (left), Lead (middle), and Sea Ice (right) [^3] </h3>
+<h3 align="center">Figure 4: Waveform examples for Envisat (top row) and SARAL (bottom row) for three different surface scatterers: Ocean (left), Lead (middle), and Sea Ice (right) [^4] </h3>
 
 
 In this project, we will be considering the two classes that are relevant to our selected area of interest - sea ice and lead. The echoes are classified using the K-means algorithm, and the results are shown in Figure 5. The shapes of the echoes are pretty much the same with the ones in Figure 4, showing that the algorithm is reliable to classify sea ice and lead. However, in cases where three or four classes need to be classified, further refinements need to be made.
@@ -176,5 +176,5 @@ Project Link: [https://github.com/affan1317/GEOL0069-EOYA](https://github.com/af
 # References
 [^1]: MacQueen, J., 1967, June. Some methods for classification and analysis of multivariate observations. In Proceedings of the fifth Berkeley symposium on mathematical statistics and probability (Vol. 1, No. 14, pp. 281-297).
 [^2]: Abiodun M. Ikotun, Absalom E. Ezugwu, Laith Abualigah, Belal Abuhaija, Jia Heming, 2023. K-means clustering algorithms: A comprehensive review, variants analysis, and advances in the era of big data, Information Sciences, Volume 622, Pages 178-210, ISSN 0020-0255. [https://doi.org/10.1016/j.ins.2022.11.139](https://www.sciencedirect.com/science/article/pii/S0020025522014633)
-[^3]: Müller FL, Dettmering D, Bosch W, Seitz F. Monitoring the Arctic Seas: How Satellite Altimetry Can Be Used to Detect Open Water in Sea-Ice Regions. Remote Sensing. 2017; 9(6):551. [https://doi.org/10.3390/rs9060551](https://www.mdpi.com/2072-4292/9/6/551#)
-[^4]: Sharma N, 2024. K-Means Clustering Explained, MLOps Blog, last accessed 27/05/2024 [website](https://neptune.ai/blog/k-means-clustering)
+[^3]: Sharma N, 2024. K-Means Clustering Explained, MLOps Blog, last accessed 27/05/2024 [website](https://neptune.ai/blog/k-means-clustering)
+[^4]: Müller FL, Dettmering D, Bosch W, Seitz F. Monitoring the Arctic Seas: How Satellite Altimetry Can Be Used to Detect Open Water in Sea-Ice Regions. Remote Sensing. 2017; 9(6):551. [https://doi.org/10.3390/rs9060551](https://www.mdpi.com/2072-4292/9/6/551#)
