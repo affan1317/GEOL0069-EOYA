@@ -31,6 +31,7 @@
     <li><a href="#where-are-we">Where are we?</a></li>
     <li><a href="#sentinel-2-optical-image-classification">Sentinel-2 optical image classification</a></li>
     <li><a href="#sentinel-3-altimetry-data-classification">Sentinel-3 altimetry data classification</a></li>
+    <li><a href="#evaluation">Evaluation</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
     <li><a href="#references">References</a></li>
@@ -120,6 +121,31 @@ In this project, we will be considering the two classes that are relevant to our
 </a>
 <h3 align="center">Figure 5: Classified echoes from altimetry data</h3>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Evaluation -->
+# Evaluation
+The echoes are then aligned for mean and standard deviation calculation. In Figure 6, we can see the obvious difference between the mean power magnitude of lead that is significantly higher than that of sea ice. The standard deviation is also way higher for lead compared to sea ice. The resulting mean and standard deviation of lead echoes are characteristic of the specular scattering of calm water. However, the sea ice mean echo shows a different shape than what we would expect. On top of that, the mean is shifted quite a bit to the right.
+
+<a href="https://github.com/affan1317/GEOL0069-EOYA">
+   <img src="mean_sd_aligned.png" alt="Logo" width="800" height="500">
+</a>
+<h3 align="center">Figure 6: Mean and standard deviation of aligned echoes class</h3>
+
+Upon closer inspection, the source of the error comes not from the classification algorithm, but instead it stems from the method used for aligning the echoes. A shown in Figure 7, the lead echoes are successfully aligned but the sea ice echoes are not. Having that said, the alignment method can be improved to properly align the echoes for better results.
+
+<a href="https://github.com/affan1317/GEOL0069-EOYA">
+   <img src="waves_classified_aligned.png" alt="Logo" width="800" height="500">
+</a>
+<h3 align="center">Figure 7: Classifid echoes after alignment</h3>
+
+A confusion matrix is constructed comparing the result of K-means classification of altimetry data with the surface type published by the ESA, which is included in the already downloaded altimetry data:
+
+Confusion Matrix:
+[[4174    6]
+ [  23 2305]]
+
+Most of the K-means classification results agree with the ESA CLASSIFICATION
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
