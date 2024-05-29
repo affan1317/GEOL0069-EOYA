@@ -42,6 +42,8 @@
 # K-means Clustering
 K-means clustering is a type of unsupervised learning algorithm used for partitioning a dataset into a set of k groups (or clusters), where k represents the number of groups pre-specified by the analyst. It classifies the data points based on the similarity of the features of the data[^1]. The basic idea is to define k centroids, one for each cluster, and then assign each data point to the nearest centroid, while keeping the centroids as small as possible[^2].
 
+
+
 ## Why K-means for Clustering?
 K-means clustering is particularly well-suited for applications where:
 - The structure of the data is not known beforehand: K-means doesn’t require any prior knowledge about the data distribution or structure, making it ideal for exploratory data analysis.
@@ -92,6 +94,7 @@ The selected location for this project is in the Baffin Bay, the stretch of sea 
 </a>
 <h3 align="center">Figure 2: Location of the area of interest</h3>
 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- S2 -->
@@ -102,6 +105,7 @@ Sentinel-2 provides an optical image of the location, composed of 110x110 km2 ti
    <img src="kmeans.png" alt="Logo" width="800" height="500">
 </a>
 <h3 align="center">Figure 3: K-means classification results for the area of interest</h3>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,12 +118,14 @@ The shape of altimetry waveforms strongly depend on the surface characteristics.
 </a>
 <h3 align="center">Figure 4: Waveform examples for Envisat (top row) and SARAL (bottom row) for three different surface scatterers: Ocean (left), Lead (middle), and Sea Ice (right) [^3] </h3>
 
+
 In this project, we will be considering the two classes that are relevant to our selected area of interest - sea ice and lead. The echoes are classified using the K-means algorithm, and the results are shown in Figure 5. The shapes of the echoes are pretty much the same with the ones in Figure 4, showing that the algorithm is reliable to classify sea ice and lead. However, in cases where three or four classes need to be classified, further refinements need to be made.
 
 <a href="https://github.com/affan1317/GEOL0069-EOYA">
    <img src="waves_classified.png" alt="Logo" width="800" height="500">
 </a>
 <h3 align="center">Figure 5: Classified echoes from altimetry data</h3>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,20 +138,23 @@ The echoes are then aligned for mean and standard deviation calculation. In Figu
 </a>
 <h3 align="center">Figure 6: Mean and standard deviation of aligned echoes class</h3>
 
+
 Upon closer inspection, the source of the error comes not from the classification algorithm, but instead it stems from the method used for aligning the echoes. A shown in Figure 7, the lead echoes are successfully aligned but the sea ice echoes are not. Having that said, the alignment method can be improved to properly align the echoes for better results.
 
 <a href="https://github.com/affan1317/GEOL0069-EOYA">
    <img src="waves_classified_aligned.png" alt="Logo" width="800" height="500">
 </a>
-<h3 align="center">Figure 7: Classifid echoes after alignment</h3>
+<h3 align="center">Figure 7: Classified echoes after alignment</h3>
+
 
 A confusion matrix is constructed comparing the result of K-means classification of altimetry data with the surface type published by the ESA, which is included in the already downloaded altimetry data:
 
-Confusion Matrix:
-[[4174    6]
- [  23 2305]]
+<a href="https://github.com/affan1317/GEOL0069-EOYA">
+   <img src="confusion_matrix.png" alt="Logo" width="800" height="500">
+</a>
+<h3 align="center">Figure 8: Confusion matrix between the predicted K-means cluster and the ESA true lables </h3>
 
-Most of the K-means classification results agree with the ESA CLASSIFICATION
+Most of the K-means classification results agree with the ESA classification, where only 29 pixels were 'wrongly' predicted out of 6508 total pixels, as shown in Figure 8. Therefore, K-means classification for altimetry data is very reliable to distinguish lead from sea ice, provided that there are only two classes.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
