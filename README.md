@@ -37,7 +37,7 @@
 
 <!-- INTRODUCTION -->
 # K-means Clustering
-K-means clustering is a type of unsupervised learning algorithm used for partitioning a dataset into a set of k groups (or clusters), where k represents the number of groups pre-specified by the analyst. It classifies the data points based on the similarity of the features of the data [^1][^2]. The basic idea is to define k centroids, one for each cluster, and then assign each data point to the nearest centroid, while keeping the centroids as small as possible.
+K-means clustering is a type of unsupervised learning algorithm used for partitioning a dataset into a set of k groups (or clusters), where k represents the number of groups pre-specified by the analyst. It classifies the data points based on the similarity of the features of the data [^1] [^2]. The basic idea is to define k centroids, one for each cluster, and then assign each data point to the nearest centroid, while keeping the centroids as small as possible.
 
 ## Why K-means for Clustering?
 K-means clustering is particularly well-suited for applications where:
@@ -87,6 +87,7 @@ The selected location for this project is in the Baffin Bay, the stretch of sea 
 <a href="https://github.com/affan1317/GEOL0069-EOYA">
    <img src="location.png" alt="Logo" width="800" height="500">
 </a>
+<h3 align="center">Figure 2: Location of the area of interest</h3>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,16 +98,26 @@ Sentinel-2 provides an optical image of the location, composed of 110x110 km2 ti
 <a href="https://github.com/affan1317/GEOL0069-EOYA">
    <img src="kmeans.png" alt="Logo" width="800" height="500">
 </a>
+<h3 align="center">Figure 3: K-means classification results for the area of interest</h3>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- S3 -->
 # Sentinel-3 altimetry data classification
-
+The shape of altimetry waveforms strongly depend on the surface characteristics. Major differences can be seen in terms of power magnitudes, number and shape of signal peaks [^3]. Leads produce narrow waves with very high power magnitude due to the calm and flat water. On the other hand, signal reflected from the ocean and sea ice are wider, noisier, and tend to have more peaks. This is because they are subjected to movement caused by waves and/or ice floes. The clear differences allow the classification of these surfaces using altimetry data.
 
 <a href="https://github.com/affan1317/GEOL0069-EOYA">
-   <img src="altimetry.png" alt="Logo" width="1600" height="900">
+   <img src="altimetry.png" alt="Logo" width="800" height="500">
 </a>
+<h3 align="center">Figure 4: Waveform examples for Envisat (top row) and SARAL (bottom row) for three different surface scatterers: Ocean (left), Lead (middle), and Sea Ice (right) [^3] </h3>
+
+In this project, we will be considering the two classes that are relevant to our selected area of interest - sea ice and lead. The echoes are classified using the K-means algorithm, and the results are shown in Figure 5. The shapes of the echoes are pretty much the same with the ones in Figure 4, showing that the algorithm is reliable to classify sea ice and lead. However, in cases where three or four classes need to be classified, further refinements need to be made.
+
+<a href="https://github.com/affan1317/GEOL0069-EOYA">
+   <img src="waves_classified.png" alt="Logo" width="800" height="500">
+</a>
+<h3 align="center">Figure 5: Classified echoes from altimetry data</h3>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
