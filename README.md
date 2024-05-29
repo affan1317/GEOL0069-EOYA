@@ -30,14 +30,16 @@
     </li>
     <li><a href="#where-are-we">Where are we?</a></li>
     <li><a href="#sentinel-2-optical-image">Sentinel-2 Optical Image</a></li>
+    <li><a href="#sentinel-3-altimetry-data">Sentinel-3 Altimetry Data</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#references">References</a></li>
   </ol>
 </details>
 
 <!-- INTRODUCTION -->
 # K-means Clustering
-K-means clustering is a type of unsupervised learning algorithm used for partitioning a dataset into a set of k groups (or clusters), where k represents the number of groups pre-specified by the analyst. It classifies the data points based on the similarity of the features of the data [^1] [^2]. The basic idea is to define k centroids, one for each cluster, and then assign each data point to the nearest centroid, while keeping the centroids as small as possible.
+K-means clustering is a type of unsupervised learning algorithm used for partitioning a dataset into a set of k groups (or clusters), where k represents the number of groups pre-specified by the analyst. It classifies the data points based on the similarity of the features of the data [^1]. The basic idea is to define k centroids, one for each cluster, and then assign each data point to the nearest centroid, while keeping the centroids as small as possible [^2].
 
 ## Why K-means for Clustering?
 K-means clustering is particularly well-suited for applications where:
